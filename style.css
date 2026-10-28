@@ -1,22 +1,118 @@
 
+body {
+  background-color: var(--black);}
+  
+  
+  
+  
+  
   h1,h2,h3,h4,h5,h6 .h1,.h2,.h3,.h4,.h5,.h6 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 800;
   font-style: normal;
   }
-
   :root {
     --yellow: rgb(255,232,31);
     --black: rgb(23,23,23);
-    --white: rgb(244,244,244);
+    --red: #E4202B;
   }
 .bg-black {
-  background-color: var(--black) !important;
+  background-color: var(--black);
 }
 .bg-yellow {
-  background-color: var(--yellow) !important;
+  background-color: var(--yellow);
 }
-.bg-white {
-  background-color: var(--white) !important;
+.bg-red {
+  background-color: var(--red);
+}
+
+.text-red {
+  color: var(--red);
+}   
+.text-black {
+  color: var(--black);
+}   
+.text-yellow {
+  color: var(--yellow);
+}
+
+.nav-link {
+  color: var(--yellow);
+}
+.nav-link:hover {
+  color: white !important;
+  text-shadow: 2px 2px 4px var(--red), -2px -2px 4px var(--red);
+}
+.logo {
+  width: 50px;
+
+}
+nav {
+transition: all 0.3s ease-in-out;
+height: 140px;
+}
+.btn-custom {
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 35px;
+  transition: all 0.3s ease-in-out;
+  width: 90px;
+}
+.card {
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  border-color: var(--yellow);
+  padding: 10px;
+  margin-top: 20px;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: var(--black);
+  color: var(--red);
+  border-color: var(--red);
+}   
+.container-cards {
+  margin-top: -150px;
+}
+.numeri {
+font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--yellow);
+}
+
+.title{
+    margin-top: 9.5rem;
+    color: var(--yellow);
+    padding: 10px;
+}
+.accordion-button, .accordion-item{
+  background-color: var(--black);
+  color: var(--yellow);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-button::after {
+  filter: invert(100%);
+}
+.accordion-button:not(.collapsed){
+    color: var(--red);
+    background-color: var(--black);
+    box-shadow: none;
+}
+
+.card-custom {
+  box-sizing: border-box;
+  flex: 0 0 200px;
+  background-color: var(--yellow);
+  color: var(--black);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--yellow);
+  padding: 10px;
+  margin-top: 20px;
+  height: 150px;
 }
